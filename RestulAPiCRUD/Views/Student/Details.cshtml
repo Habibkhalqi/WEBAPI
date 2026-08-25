@@ -1,0 +1,52 @@
+@model RestulAPiCRUD.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sName)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sAge)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sAge)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sGender)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sFatherName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sFatherName)
+        </dd>
+    </dl>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.sClass)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.sClass)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
